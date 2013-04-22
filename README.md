@@ -10,7 +10,7 @@ things of note:
 
 run **$ compass watch** in the */dev/styles/* folder to use/compile .scss files.
 
-run **sh build.sh** from */dev/build/* to compile everything into the /dist/ directory.
+run **$ sh build.sh** from */dev/build/* to compile everything into the */dist/* directory.
 
 make sure you add any additional page specific js to the module section of */build/app.build.js* so r.js to trace dependencies in those files as well.
 
