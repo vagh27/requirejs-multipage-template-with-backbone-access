@@ -5,17 +5,17 @@ A starter template for people hoping to leverage require.js / r.js across multip
 
 This is NOT a template for a backbone driven app.  It's for a website that wants to use requirejs to manage/compile JS and occasionally use backbone on, say, an agenda page.  
 
-Things of Note
---------------
+things of note:
+---------------
 
-run $ compass watch in the /dev/styles/ folder to use/compile .scss files.
+run **$ compass watch** in the */dev/styles/* folder to use/compile .scss files.
 
-run sh build.sh from /dev/build/ to compile everything into the /dist/ directory.
+run **sh build.sh** from */dev/build/* to compile everything into the /dist/ directory.
 
-make sure you add any additional page specific js to the module section of /build/app.build.js so r.js to trace dependencies in those files as well.
+make sure you add any additional page specific js to the module section of */build/app.build.js* so r.js to trace dependencies in those files as well.
 
-The site structure looks like this:
------------------------------------
+site structure:
+---------------
 
 Homepage >> loads require >> loads common >>> loads app/home  
 Backbone >> loads require >> loads common >>> loads app/backbone which pulls in the jquery, backbone and underscore definitions from common  
