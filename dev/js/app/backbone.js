@@ -3,7 +3,7 @@ define(function (require) {
         backbone = require('backbone'),
         underscore = require('underscore');
 
-    $(function () {
+    $(function (data) {
 
         //good old fashion jquery
         $('.wrapper').append('backbone function - backbone data about to get populated (message brought to you by app/backbone.js):<br /><br />')
@@ -37,7 +37,7 @@ define(function (require) {
         App.Collections.Agenda = Backbone.Collection.extend();
 
         //we will get our data from a json and pass it into the App.Views.TestData as a collection
-        $.getJSON('/data/data.json?'+(new Date()).getTime(), function(testCollection) { 
+        $.getJSON('/js/data/data.json?'+(new Date()).getTime(), function(testCollection) { 
             var test = new App.Views.TestData({ collection:testCollection });
             test.render().el;
         });

@@ -18,6 +18,6 @@ site structure:
 ---------------
 
 Homepage >> loads require >> loads common >>> loads app/home  
-Backbone >> loads require >> loads common >>> loads app/backbone which pulls in the jquery, backbone and underscore definitions from common. pulls backbone collection data from */data/data.json*  
+Backbone >> loads require >> loads common >>> loads app/backbone which pulls in the jquery, backbone and underscore definitions from common. pulls backbone collection data from */js/data/data.json*  
 Static >> loads require >> loads common through data-main attr  
 Animation >> loads require >> loads common >> loads app/animation which pulls in jquery, TweenCSS, and TweenLite definitions from common  
