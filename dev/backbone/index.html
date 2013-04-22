@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Requirejs Multi-Page Template with Backbone Access</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <link rel="stylesheet" href="/styles/css/screen.css"/>      
+    </head>
+    <body class="backbone">
+        <div class="wrapper">
+
+        </div>
+        <script src="/js/lib/require.js"></script>
+        <script>
+            require(['/js/common.js'], function (common) {
+                //page specific js loaded in here
+                require(['app/backbone']);
+            });
+        </script>
+    </body>
+</html>

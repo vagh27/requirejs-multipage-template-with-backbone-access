@@ -1,0 +1,1 @@
+define(["require","jquery"],function(e){var t=e("jquery");t(function(){var e='<ul><li><a href="/">Home</a></li> <li><a href="/backbone/">Backbone Example</a></li> <li><a href="/animation/">Animation Example</a></li> <li><a href="/static/">Static Example</a></li> </ul>';t(".wrapper").prepend(e),t(".wrapper").append("global function 1 - brought to you by base.js<br />")})});
